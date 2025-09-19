@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head of the HTML -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tables - HTML</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 18px;
+      text-align: middle;
+    }
+
+    th,
+    td {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+      border: 2px solid black;
+    }
+
+    th {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    caption {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Tables in HTML</h1>
+  <table>
+    <!-- Head of the Table -->
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Salary</th>
+      </tr>
+    </thead>
+
+    <!-- Body of the Table -->
+    <tbody>
+      <tr>
+        <td>Dev</td>
+        <td>ML Engineer</td>
+        <td>$1000</td>
+      </tr>
+      <tr>
+        <td>Aruman</td>
+        <td>Software Intern</td>
+        <td>$1000</td>
+      </tr>
+      <tr>
+        <td>Krish</td>
+        <td>Senior Software Developer</td>
+        <td>$900</td>
+      </tr>
+      <tr>
+        <td>Thanks</td>
+        <td colspan="2" >You</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</body>
+
+</html>
+
+<!--The table tag is used to define tables, which are used to format and display tabular data -->
+
+<!--The use of colspan is to make a cell span across multiple columns, which is useful for headers or when you want to merge cells in a table. -->
+
+<!--tr is table row used for defining a row in the table-->
+
+<!--th is table header used for defining a header cell in the table-->
+
+<!--td is table data used to define a cell in the table body-->
+
+<!--th should always be equal to td in number, otherwise it will not be displayed properly-->

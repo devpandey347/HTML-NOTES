@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head of the HTML -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tables - HTML</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 18px;
+      text-align: middle;
+    }
+
+    th,
+    td {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+      border: 2px solid black;
+    }
+
+    th {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    caption {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Tables in HTML</h1>
+  <table>
+    <!-- Head of the Table -->
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Salary</th>
+      </tr>
+    </thead>
+
+    <!-- Body of the Table -->
+    <tbody>
+      <tr>
+        <td>Name</td>
+        <td>Score</td>
+        <td>Match</td>
+      </tr>
+      <tr>
+        <td>Virat Kohli</td>
+        <td>95</td>
+        <td>Ipl 2024</td>
+      </tr>
+      <tr>
+        <td>Hardik Pandya</td>
+        <td>85</td>
+        <td>IPL 2024</td>
+      </tr>
+      <tr>
+        <td>Thanks</td>
+        <td colspan="2" >You</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</body>
+
+</html>
